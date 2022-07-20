@@ -1,0 +1,6 @@
+## This script goes in /etc/init/lightdm
+#
+# wal -R -n &
+# xrdb -merge ~/.cache/wal/rofi.xres &
+# nitrogen --restore &
+picom -f &

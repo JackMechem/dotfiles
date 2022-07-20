@@ -1,0 +1,18 @@
+#! /bin/sh
+
+# ~/.xprofile: execute commands at the beginning of the X user
+#              session - before the window manager is started.
+#
+# The xprofile files are natively sourced by the following
+# display managers:
+#
+#     GDM     - /etc/gdm/Xsession
+#     LightDM - /etc/lightdm/Xsession
+#     LXDM    - /etc/lxdm/Xsession
+#     SDDM    - /usr/share/sddm/scripts/Xsession
+#
+# More in https://wiki.archlinux.org/index.php/Autostarting
+
+wal -R -n &
+nitrogen --restore &
+picom -f &
