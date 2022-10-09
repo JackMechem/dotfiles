@@ -7,7 +7,7 @@
 
 active_text_color="$color7"
 active_bg=""
-active_underline="$color1"
+active_underline="$foreground"
 
 inactive_text_color="$color8"
 inactive_bg=
@@ -181,7 +181,7 @@ generate_window_list() {
 		esac
 
 		if [ "$show_wsn" == "true" ]; then
-			w_name="$(($ws + 1)) $w_name"
+			w_name="$ws $w_name"
 		fi
 		
 		# Use user-selected character case

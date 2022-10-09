@@ -18,7 +18,7 @@ window {
     text-color:                     @foreground;
     border:                         2px;
     border-color:                   @foreground;
-    border-radius:                  10px;
+    border-radius:                  5px;
     width:                          350px;
     location:                       center;
     anchor:                         center;
@@ -27,8 +27,8 @@ window {
 }
 
 prompt {
-    enabled: 			            true;
-    padding: 			            8px;
+    enabled: 			            false;
+    padding: 			            10px;
     background-color: 		        @background;
     text-color: 		            @foreground;
 }
@@ -40,7 +40,7 @@ textbox-prompt-colon {
     background-color:               @background;
     text-color:                     @foreground;
     padding:                        8px 12px 8px 12px;
-	font:							"Iosevka Nerd Font 10";
+	font:							"Iosevka Nerd Font 15";
 }
 
 entry {
@@ -51,10 +51,10 @@ entry {
     horizontal-align:               0;
     placeholder:                    "Run...";
     blink:                          true;
-    border:                  		0px 0px 2px 0px;
+    border:                  		2px;
     border-color:                  	@foreground;
-    border-radius:                  10px;
-    padding:                        8px;
+    border-radius:                  90px;
+    padding:                        10px 15px;
 }
 
 inputbar {
@@ -80,7 +80,7 @@ case-indicator {
 listview {
     background-color:               @background;
     columns:                        1;
-    lines:							5;
+    lines:							10;
     spacing:                        4px;
     cycle:                          false;
     dynamic:                        true;
@@ -115,7 +115,7 @@ element-text {
     expand:                         true;
     horizontal-align:               0;
     vertical-align:                 0.5;
-    margin:                         2px 0px 2px 2px;
+    margin:                         2px 0px 2px 8px;
 }
 
 element normal.urgent,
@@ -135,7 +135,7 @@ element selected {
     background-color:               @background;
     text-color:                     @foreground;
     border:                  		0px 0px 0px 0px;
-    border-radius:                  10px;
+    border-radius:                  90px;
     border-color:                  	@foreground;
 }
 

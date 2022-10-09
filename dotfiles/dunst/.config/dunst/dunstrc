@@ -33,7 +33,7 @@
   history_length = 6
   title = Dunst
   class = Dunst
-  corner_radius = 20
+  corner_radius = 10
 
   mouse_left_click = close_current
   mouse_middle_click = do_action

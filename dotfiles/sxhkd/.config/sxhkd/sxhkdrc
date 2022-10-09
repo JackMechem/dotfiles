@@ -6,9 +6,13 @@
 super + Return
 	alacritty
 
+# DOOM Emacs
+super + shift + Return
+	emacsclient -c -a 'emacs'
+
 # Rofi Menus
-super + {space,m,p}
-	sh $HOME/.config/rofi/bin/{runner,music,powermenu}
+super + {space}
+    bash /home/jack/dotfiles/.config/rofi/bin/runner
 
 # make sxhkd reload its configuration files:
 super + Escape
