@@ -3,6 +3,8 @@
 
 ## Details
 
+### Neovim Config
+My Neovim Config is in [this repo](https://github.com/JackMechem/neovim-config).
 
 ### Waybar
 > There are three bars in my waybar config file: the main bar, noback, and desktopclock
