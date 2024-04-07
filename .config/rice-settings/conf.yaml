@@ -1,0 +1,56 @@
+close-application-after: true
+dialog-after-run: false
+dialog-confirm: false
+
+entries: [ 
+  {
+    name: Audio
+  },
+  {
+    name: Mixer,
+    command: pavucontrol
+  },
+  {
+    name: Appearance
+  },
+  { 
+    name: Wallpaper, 
+    command: waypaper
+  }, 
+  {
+    name: GTK Settings,
+    command: nwg-look
+  }, 
+  {
+    name: PC Lighting,
+    command: openrgb
+  }, 
+  {
+    name: Config Files
+  },
+  { 
+    name: Config Folder, 
+    command: kitty --hold sh -c "nvim /home/jack/.config/"
+  }, 
+  { 
+    name: Rice Settings Config, 
+    command: kitty --hold sh -c "nvim /home/jack/.config/rice-settings/conf.yaml"
+  }, 
+  {
+    name: Hyprland Config,
+    command: kitty --hold sh -c "nvim /home/jack/.config/hypr/hyprland.conf"
+  }, 
+  {
+    name: Kitty Config (Terminal),
+    command: kitty --hold sh -c "nvim /home/jack/.config/kitty/"
+  }, 
+  {
+    name: Bar Config (waybar),
+    command: kitty --hold sh -c "nvim /home/jack/.config/waybar/"
+  }, 
+  {
+    name: App Menu Config (Wofi),
+    command: kitty --hold sh -c "nvim /home/jack/.config/wofi/"
+  }
+]
+

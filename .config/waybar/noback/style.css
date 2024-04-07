@@ -1,0 +1,139 @@
+@import "mocha.css";
+
+* {
+  min-height: 0;
+  font-family: "JetBrainsMono Nerd Font", "Hack Nerd Font", FontAwesome, Roboto,
+    Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+window#waybar {
+  color: @text;
+  background: @base00;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+window#waybar.empty {
+  opacity: 0.3;
+}
+
+.modules-left {
+    border: none;
+}
+
+.modules-right {
+  border: none;
+}
+
+.modules-center {
+  border: none;
+}
+
+button {
+  border: none;
+  border-radius: 0;
+}
+
+button:hover {
+  background: @base;
+  border-radius: 90px;
+}
+
+#custom-power {
+  color: @blue;
+  font-weight: 600;
+  margin-right: 10px;
+  padding-left: 15px;
+  padding-right: 19px;
+  border-radius: 90px;
+  background: @crust
+}
+
+#workspaces {
+  font-weight: 600;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 90px;
+  background: @crust
+}
+
+#workspaces button {
+  color: @text;
+    font-weight: 600;
+        margin: 0px;
+        padding: 0px 5px;
+}
+
+#workspaces button.urgent {
+  color: @red;
+}
+#workspaces button.empty {
+  color: @surface2;
+}
+
+#workspaces button.active {
+  color: @blue;
+}
+
+#workspaces button.focused {
+  color: @green;
+}
+
+#cpu,
+#temperature,
+#memory,
+#disk {
+  color: @blue;
+  font-weight: 600;
+  margin-right: 10px;
+  padding: 6px 15px;
+  border-radius: 90px;
+  background: @crust
+}
+
+#pulseaudio {
+  color: @crust;
+  font-weight: 600;
+  margin-right: 10px;
+  padding: 6px 15px;
+  border-radius: 90px;
+  background: @blue
+}
+
+#network {
+  color: @crust;
+  font-weight: 600;
+  margin-right: 10px;
+  padding: 6px 15px;
+  border-radius: 90px;
+  background: @green
+}
+
+#tray {
+  color: @text;
+  font-weight: 600;
+  padding: 6px 15px;
+  border-radius: 90px;
+  background: @crust
+}
+
+#clock {
+  color: @blue;
+  font-weight: 600;
+  margin-right: 10px;
+  padding: 6px 15px;
+  border-radius: 90px;
+  background: @crust
+}
+
+#custom-sepp {
+  color: @surface2;
+  font-size: 20px;
+  padding-left: 4px;
+  padding-right: 10px;
+}
+
+#network.disconnected {
+  background-color: @red;
+}

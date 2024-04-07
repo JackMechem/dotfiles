@@ -1,0 +1,26 @@
+@import "mocha.css";
+
+* {
+  min-height: 0;
+  font-family: "JetBrainsMono Nerd Font", Roboto,
+    Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  /* background-color: #04142d; */
+}
+
+window#waybar {
+  color: @text;
+  background: 00;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+window#waybar.empty {
+}
+
+#clock {
+    margin-left: 100px;
+    font-weight: 300;
+    font-size: 48pt;
+    color: @blue;
+}
