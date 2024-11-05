@@ -4,6 +4,13 @@ dialog-confirm: false
 
 entries: [ 
   {
+    name: Peripherals
+  },
+  {
+    name: Mouse Settings (solaar),
+    command: solaar
+  },
+  {
     name: Audio
   },
   {

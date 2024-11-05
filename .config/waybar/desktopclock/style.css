@@ -1,26 +1,25 @@
 @import "mocha.css";
 
 * {
-  min-height: 0;
-  font-family: "JetBrainsMono Nerd Font", Roboto,
-    Helvetica, Arial, sans-serif;
-  font-size: 12pt;
-  /* background-color: #04142d; */
+    min-height: 0;
+    font-family: "IBM Plex Sans", "JetBrainsMono Nerd Font", Roboto,
+        Helvetica, Arial, sans-serif;
+    font-size: 12pt;
+    /* background-color: #04142d; */
 }
 
 window#waybar {
-  color: @text;
-  background: 00;
-  transition-property: background-color;
-  transition-duration: 0.5s;
+    color: @text;
+    background: 00;
+    transition-property: background-color;
+    transition-duration: 0.5s;
 }
 
-window#waybar.empty {
-}
+window#waybar.empty {}
 
 #clock {
     margin-left: 100px;
-    font-weight: 300;
+    font-weight: 200;
     font-size: 48pt;
-    color: @blue;
+    color: rgba(180, 180, 184, 0.8);
 }
