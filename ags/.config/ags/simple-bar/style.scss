@@ -1,0 +1,119 @@
+@use "sass:color";
+
+$bg: #282828;
+$fg: #ebdbb2;
+$accent: #689d6a;
+$radius: 7px;
+
+window.Bar {
+  border: none;
+  box-shadow: none;
+  background-color: $bg;
+  opacity: 1;
+  color: $fg;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Iosevka Term';
+
+
+  button {
+    all: unset;
+    background-color: transparent;
+
+    &:hover label {
+      background-color: color.adjust($fg, $alpha: -0.84);
+      border-color: color.adjust($accent, $alpha: -0.8);
+    }
+
+    &:active label {
+      background-color: color.adjust($fg, $alpha: -0.8)
+    }
+  }
+
+  label {
+    transition: 200ms;
+    margin: 6px 0px;
+  }
+
+  .Workspaces .focused label {
+    color: $accent;
+  }
+
+  .Workspaces {
+    margin: 0 10px;
+  }
+
+  .Workspaces label {
+    padding: 0 6px;
+    margin: 4px 2px;
+    border-radius: 5px;
+  }
+
+  .FocusedClient {
+    color: $accent;
+  }
+
+  .Media .Cover {
+    min-height: 1.2em;
+    min-width: 1.2em;
+    border-radius: 2px;
+    margin-right: 8px;
+    background-position: center;
+    background-size: contain;
+  }
+
+  .Tray {
+    padding: 0 8px;
+    margin-right: 10px;
+  }
+
+  .Battery {
+    margin: 0 8px;
+  }
+
+  .Battery label {
+    margin-left: 5px;
+  }
+
+  .Wifi {
+    margin: 0px 8px;
+  }
+
+  .Time {
+    margin: 0 8px;
+  }
+
+
+  .AudioSlider {
+    * {
+      all: unset;
+    }
+
+    icon {
+      margin-right: 8px;
+    }
+
+    & {
+      margin: 0 12px;
+    }
+
+    trough {
+      background-color: color.adjust($fg, $alpha: -0.8);
+      border-radius: $radius;
+    }
+
+    highlight {
+      background-color: $accent;
+      min-height: .8em;
+      border-radius: $radius;
+    }
+
+    slider {
+      background-color: $fg;
+      border-radius: $radius;
+      min-height: 0px;
+      min-width: 0px;
+      margin: 0px;
+    }
+  }
+}

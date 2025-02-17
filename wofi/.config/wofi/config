@@ -1,0 +1,8 @@
+show=drun
+width=30%
+lines=8
+term=kitty
+allow_images=true
+prompt=Search
+image_size=32
+location=center
